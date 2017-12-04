@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import CONSTANTS from '../../constants';
 
-const colors = [null].concat(Object.keys(CONSTANTS.COLORS).map(key => CONSTANTS.COLORS[key]));
+const colors = [''].concat(Object.keys(CONSTANTS.COLORS).map(key => CONSTANTS.COLORS[key]));
 
 export default class Button extends PureComponent {
   static propTypes = {
@@ -18,8 +18,8 @@ export default class Button extends PureComponent {
     ]),
     onClick: PropTypes.func,
     color: PropTypes.oneOf(colors),
-    size: PropTypes.oneOf(['small', 'medium', 'large']),
-    state: PropTypes.oneOf(['hover', 'focus', 'active', 'loading']),
+    size: PropTypes.oneOf(['', 'small', 'medium', 'large']),
+    state: PropTypes.oneOf(['', 'hovered', 'focused', 'active']),
     outlined: PropTypes.bool,
     inverted: PropTypes.bool,
     submit: PropTypes.bool,
@@ -40,10 +40,10 @@ export default class Button extends PureComponent {
     style: {},
     renderAs: 'a',
     onClick: () => null,
-    color: null,
+    color: undefined,
+    size: undefined,
+    state: undefined,
     link: false,
-    size: null,
-    state: null,
     outlined: false,
     inverted: false,
     submit: false,
