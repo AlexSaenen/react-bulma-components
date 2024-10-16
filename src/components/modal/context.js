@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useContext } from 'react';
 
 export const ModalContext = React.createContext({
