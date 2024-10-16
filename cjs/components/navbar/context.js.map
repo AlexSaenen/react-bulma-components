@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/components/navbar/context.js"],"names":["ShowContext","React","createContext"],"mappings":";AAAA;;;;;;;AAEA;;;;AAEO,IAAMA,WAAW,gBAAGC,kBAAMC,aAAN,CAAoB,KAApB,CAApB","sourcesContent":["'use client';\n\nimport React from 'react';\n\nexport const ShowContext = React.createContext(false);\n"],"file":"context.js"}
